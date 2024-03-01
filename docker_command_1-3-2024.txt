@@ -1,0 +1,160 @@
+    1  systemctl status docker
+    2  systemctl start docker
+    3  systemctl enable docker
+    4  systemctl status docker
+    5  ls -l /var/lib/docker/
+    6  docker images
+    7  docker ps -a
+    8  ls -la
+    9  docker login
+   10  mkdir docker
+   11  cd docker/
+   12  ls
+   13  cd ..
+   14  ls
+   15  rm docker/
+   16  rm -rf docker/
+   17  ls
+   18  mkdir docker
+   19  ls
+   20  cd docker/
+   21  ls
+   22  ls -la
+   23  cat config.json
+   24  docker pull alpine
+   25  docker images
+   26  docker ps -a
+   27  docker ps
+   28  netstat -plant
+   29  docker run --name container1 -dit 05455a08881e 
+   30  docker ps -a
+   31  docker exec -ti d304440b85de  
+   32  docker exec -ti d304440b85de  sh
+   33  docker ps -a
+   34  docker stop container1
+   35  docker ps -a
+   36  docker ps
+   37  docker start container1
+   38  docker ps 
+   39  docker run --name con2 -dit 05455a08881e
+   40  docker ps
+   41  docker run --name con3 -dit 05455a08881e 
+   42  docker ps
+   43  docker run --name con4 -dit -P 05455a08881e
+   44  docker ps
+   45  rm -f container1
+   46  docker ps
+   47  rm -F container1
+   48  docker ps 
+   49  docker ps -a
+   50  rm -F d304440b85de
+   51  docker run --name webserver -dit -P 05455a08881e
+   52  docker ps
+   53  yum install httpd -y
+   54  docker ps
+   55  systemctl status httpd
+   56  systemctl start httpd
+   57  systemctl enable httpd
+   58  systemctl status httpd
+   59  docker run --name webserver2 -dit -P 05455a08881e
+   60  docker ps
+   61  docker pull nginx
+   62  docker images
+   63  docker run --name nginx -dit -P e4720093a3c1
+   64  docker ps
+   65  ifconfig 
+   66  curl ifconfig.io
+   67  docker ps
+   68  netstat -plant
+   69  curl ifconfig.io
+   70  docker rmi -f 05455a08881e
+   71  docker ps
+   72  docker run --name nginx2 -dit -P e4720093a3c1
+   73  docker ps
+   74  docker exec -ti 85babf2fa92f bash
+   75  docker ps
+   76  docker rm -F 85babf2fa92f
+   77  docker rm -f 85babf2fa92f
+   78  docker rm -f 017f091f8ead cde26176a4b4
+   79  docker ps
+   80  ls
+   81  cd docker/
+   82  ls
+   83  docker ps
+   84  docker images
+   85  docker ps -a
+   86  systemctl status docker 
+   87  docker ps -a
+   88  docker start nginx
+   89  docker ps
+   90  docker start webserver2
+   91  docker start con2
+   92  docker start con4
+   93  docker ps
+   94  mkdir mydocker
+   95  ls
+   96  cd mydocker/
+   97  ls
+   98  pwd
+   99  vi Dockerfile
+  100  cat Dockerfile 
+  101  ls -l
+  102  vi index.html
+  103  ls -l
+  104  vi Dockerfile 
+  105  cat Dockerfile 
+  106  ls -l
+  107  ls -ltr
+  108  docker build -t webapp:v1
+  109  docker container build -t webapp:v1 
+  110  docker iamge build -t webapp:v1 
+  111  docker image build -t webapp:v1 . 
+  112  vi Dockerfile 
+  113  docker image build -t webapp:v1 . 
+  114  vi Dockerfile 
+  115  docker image build -t webapp:v1 . 
+  116  vi Dockerfile 
+  117* 
+  118  docker image build -t webapp:v1 . 
+  119  vi Dockerfile 
+  120  docker image build -t webapp:v1 . 
+  121  vi Dockerfile 
+  122  docker image build -t webapp:v1 . 
+  123  vi Dockerfile 
+  124  cat Dockerfile 
+  125  docker image build -t webapp:v1 . 
+  126  docker images
+  127  docker rmi 80d86f926b33 
+  128  docker ps -a
+  129  docker rm 04b79b56e76e 3107c3265360 d705e3d28108 1e6350cab1d4
+  130  docker ps -a
+  131  docker images
+  132  ls
+  133  docker ps -a
+  134  ls
+  135  docker run -dit --name mycont -P webapp:v1
+  136  docker ps -a
+  137  curl ifconfig.io
+  138  curl 13.201.78.211:32769
+  139  history 
+  140  history >docker_command_1-3-2024.txt
+  141  l
+  142  ls
+  143  docker login
+  144  docker image push mydocker/sohailshaikh23
+  145  pwd
+  146  docker ps 
+  147  docker images
+  148  docker image tag 0beeba9e9249 webapp/sohailshaikh23
+  149  docker container ls
+  150  docker container commit 7a33b76b5855 webapp/sohailshaikh23
+  151  docker image push webapp/sohailshaikh23
+  152  docker push sohailshaikh23/webapp:v1
+  153  docker push sohailshaikh23/webapp
+  154  history 
+  155  docker image tag 0beeba9e9249 sohailshaikh23/webapp
+  156  docker container commit 7a33b76b5855 sohailshaikh23/webapp
+  157  docker image push sohailshaikh23/webapp
+  158  docker ps
+  159  ls
+  160  history >docker_command_1-3-2024.txt 
